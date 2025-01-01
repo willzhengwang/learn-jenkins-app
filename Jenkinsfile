@@ -97,7 +97,7 @@ pipeline {
 
         stage('Approve Prod Deployment') {
             steps {
-                timeout(1) { // Timeout for 1 minute
+                timeout(15) { // Timeout for 15 minute
                     input 'Ready to go?     Proceed or Abort'
                 }
             }
