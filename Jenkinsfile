@@ -11,10 +11,7 @@ pipeline {
 
         stage('Docker') {
             steps {
-                sh '''
-                    docker --version
-                    docker build -t my-playwright .
-                '''
+                sh 'docker build -t my-playwright .'
             }
         }
 
